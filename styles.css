@@ -134,7 +134,7 @@ body {
 
 .profile-image-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .profile-image {
@@ -249,7 +249,7 @@ body {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 /* Two Column Section Layout */
@@ -258,7 +258,7 @@ body {
     grid-template-columns: 160px 1fr;
     gap: 2rem;
     align-items: start;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .section-label-col {
