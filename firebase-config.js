@@ -15,20 +15,13 @@ firebase.initializeApp(firebaseConfig);
 
 console.log('Firebase initialized successfully');
 
-// Initialize services
-const auth = firebase.auth();
-const db = firebase.firestore();
-const storage = firebase.storage();
+// Initialize services - DECLARE GLOBALLY, don't use const
+var auth = firebase.auth();
+var db = firebase.firestore();
+var storage = firebase.storage();
 
 console.log('Firebase services ready:', {
   auth: !!auth,
   db: !!db,
   storage: !!storage
 });
-
-// Export for use in other files
-window.firebaseApp = {
-  auth,
-  db,
-  storage
-};

@@ -1,5 +1,9 @@
-// Get Firebase services
-const { auth, db, storage } = window.firebaseApp;
+// Firebase services are already declared globally by firebase-config.js
+// Just verify they exist
+if (typeof auth === 'undefined' || typeof db === 'undefined' || typeof storage === 'undefined') {
+    console.error('Firebase services not found! Make sure firebase-config.js loads first.');
+    alert('Error: Firebase not initialized properly');
+}
 
 console.log('Admin panel loaded - Firebase services:', { auth: !!auth, db: !!db, storage: !!storage });
 
